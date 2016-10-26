@@ -1,4 +1,7 @@
-#使用方法
+# mulitkeyboard
+系统键盘、表情等多合一键盘控件
+
+## 使用方法
 
 ```xml
     <com.watermelon.view.mulitkeyboard.MultiKeyboard
