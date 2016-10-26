@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MulitKeyboard</string>
+    <string name="text_hint">写点什么把</string>
+</resources>

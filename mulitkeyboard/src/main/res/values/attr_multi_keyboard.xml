@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BoardItem">
+        <attr name="switchItemId" format="reference"/>
+        <attr name="boardHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="MultiKeyboard">
+        <attr name="contentLayoutId" format="reference"/>
+    </declare-styleable>
+</resources>

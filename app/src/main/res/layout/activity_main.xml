@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.watermelon.view.demo.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/text_hint"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <com.watermelon.view.mulitkeyboard.MultiKeyboard
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentLayoutId="@id/content"
+        tools:context="com.watermelon.view.demo.MainActivity">
+
+        <com.watermelon.view.mulitkeyboard.BtnLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageButton
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+        </com.watermelon.view.mulitkeyboard.BtnLayout>
+
+        <com.watermelon.view.mulitkeyboard.BoardLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </com.watermelon.view.mulitkeyboard.BoardLayout>
+    </com.watermelon.view.mulitkeyboard.MultiKeyboard>
+</LinearLayout>
